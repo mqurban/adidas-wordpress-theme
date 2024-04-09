@@ -157,14 +157,18 @@ get_header();
                 <div class="page1">
                     <div class="content">
 
-                        <?php dynamic_sidebar('sidebar-2'); ?>
+                        <?php
+                        //  dynamic_sidebar('sidebar-2');
+                        ?>
                         <!-- USE VPN TO SEE TWEETS IF TWITTER IS NOT ALLOWED IN YOUR COUNTRY  -->
 
                     </div>
                 </div>
                 <div class="page1">
                     <div class="content">
-                        <?php dynamic_sidebar('sidebar-1'); ?>
+                        <?php
+                        // dynamic_sidebar('sidebar-1');
+                        ?>
                     </div>
                 </div>
             </div>
@@ -220,14 +224,18 @@ get_header();
             <div class="sidebar1">
                 <h1>Weather</h1>
                 <div class="weather">
-                    <?php dynamic_sidebar('sidebar-3'); ?>
+                    <?php
+                    //  dynamic_sidebar('sidebar-3'); 
+                    ?>
 
                 </div>
 
             </div>
             <div class="sidebar1">
                 <h1>Date & Time</h1>
-                <?php dynamic_sidebar('sidebar-4'); ?>
+                <?php
+                // dynamic_sidebar('sidebar-4'); 
+                ?>
 
             </div>
 

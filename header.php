@@ -65,17 +65,18 @@
 		</div>
 
 		<!-- Navigation menu with search bar on right side -->
-		<div id="nav-bar">
-			<div>
+		<div class="main-primary">
+
+			<nav class="primary-menu">
 				<?php
 				wp_nav_menu(
 					array(
 						'theme_location' => 'primary',
-						'menu_id'        => 'primary-menu',
 					)
 				);
 				?>
-			</div>
+			</nav>
+
 			<div id="nav-bar-right">
 				<form action="">
 					<div class="search-container">

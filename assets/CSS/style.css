@@ -70,31 +70,23 @@ body {
 
 
 /* Navigation menu with search box  */
-#nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+.main-primary {
     background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
-    padding: 0 150px;
-}
-
-#primary-menu {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+}
+.primary-menu ul{
+  display: flex;
+  margin: auto;
+}
+.primary-menu li{
     list-style: none;
-    padding: 0 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
 }
-
-#primary-menu li {
-    margin: 0 10px;
-
-}
-
-#primary-menu a {
+.primary-menu a{
+    display: block;
     text-decoration: none;
     color: white;
-    background-color: #0E823B;
 }
 
 
@@ -119,7 +111,7 @@ body {
 }
 
 #nav-bar-right button {
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -131,8 +123,6 @@ body {
 #nav-bar-right .search-container {
     position: relative;
 }
-
-
 
 
 #nav-bar-right input[type="text"] {
@@ -157,13 +147,20 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    /*Adjust icon color */
 }
 
-/* Remove default button styles */
 #nav-bar-right button:focus {
     outline: none;
 }
+
+
+
+
+
+
+
+
+
 
 /* CSS to set fixed height for carousel images */
 .carousel-item img {
