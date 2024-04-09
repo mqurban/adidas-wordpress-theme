@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.figma-settings-page {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+    margin: 40px;
+    height: calc(100vh - 120px);
+    /* Adjust the height based on your needs */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.image-preview {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+
+}
+
+/* backend post type event styling   */
+.events-form {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.events-form label {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.events-form input {
+    font-size: 24px;
+}
+
+#custom_fields_meta_box h2 {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.wrap .wp-heading-inline {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+
+
+#title {
+    font-family: 'Courier New', Courier, monospace;
+}

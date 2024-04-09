@@ -1,0 +1,813 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* TOP TEXT  */
+#top-text {
+    position: relative;
+    left: 28vw;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+#top-text .toast-body {
+    white-space: nowrap;
+    background-color: transparent !important;
+}
+
+#top-text .toast-body a {
+    color: #115236;
+}
+
+
+
+/* // TOP BAR  */
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-3.png);
+
+}
+
+#top-bar-left {
+    padding-left: 150px;
+}
+
+#top-bar-left img {
+    width: 100px;
+}
+
+
+#top-bar-right ul {
+    display: flex;
+    margin: 0;
+    padding: 0 250px 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-bar-right li {
+    margin-right: 10px;
+    list-style: none;
+    background-color: #0E823B;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+#top-bar-right a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Navigation menu with search box  */
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
+    padding: 0 150px;
+}
+
+#primary-menu {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+    padding: 0 10px;
+}
+
+#primary-menu li {
+    margin: 0 10px;
+
+}
+
+#primary-menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #0E823B;
+}
+
+
+
+#nav-bar-right {
+    margin: 5px auto;
+}
+
+#nav-bar-right form {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    padding: 0;
+    color: white;
+}
+
+#nav-bar-right input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
+    color: #fff;
+}
+
+#nav-bar-right button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#nav-bar-right .search-container {
+    position: relative;
+}
+
+
+
+
+#nav-bar-right input[type="text"] {
+    padding: 8px 30px 8px 18px;
+    /* Adjust padding to accommodate the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    height: 35px;
+}
+
+#nav-bar-right input[type="text"]::placeholder {
+    color: white;
+}
+
+#nav-bar-right button {
+    position: absolute;
+    right: 8px;
+    /* Adjust icon position */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /*Adjust icon color */
+}
+
+/* Remove default button styles */
+#nav-bar-right button:focus {
+    outline: none;
+}
+
+/* CSS to set fixed height for carousel images */
+.carousel-item img {
+    height: 90vh;
+    /* Adjust the height as needed */
+    background-size: cover;
+}
+
+#slider-items {
+    position: absolute;
+    color: white;
+    right: 40rem;
+    top: 12rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 40px;
+
+}
+
+#slider-items h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+#slider-items p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+
+
+#play-button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 51rem;
+    top: 5rem;
+    background-color: #2B493F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-check {
+    visibility: hidden;
+    position: absolute;
+    bottom: 5rem;
+    left: 15rem;
+}
+
+#close-button {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    visibility: hidden;
+    cursor: pointer;
+    top: -7.5rem;
+    right: -23rem;
+}
+
+/* main slider styling end here  */
+
+#main-div {
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-2.png);
+    /* background-size: cover; */
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    display: flex;
+    margin: 0;
+}
+
+
+.left-container {
+    width: 70%;
+    padding: 40px 40px 0 40px;
+    margin: 0;
+}
+
+.right-container {
+    /* background-color: red; */
+    height: 1000px;
+    padding: 20px 40px;
+    position: relative;
+    right: 90px;
+}
+
+
+.loop-main {
+    display: flex;
+    color: white;
+    align-items: center;
+    overflow: hidden;
+    max-width: 550px;
+}
+
+.post-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.post-thumbnail img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    /* padding: 5px; */
+    /* padding-bottom: 10px; */
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-post {
+    background-color: #175c4b;
+    width: 120px;
+    height: 145px;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+
+.post-title a {
+    color: white;
+}
+
+.slider-container .fa-chevron-left {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 5px;
+}
+
+.slider-container .fa-chevron-right {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 5px;
+
+}
+
+.slider-container .fa-chevron-left {
+    left: 38px;
+}
+
+.slider-container .fa-chevron-right {
+    right: 38px;
+}
+
+.hr-line {
+    background-color: white;
+    height: 2px;
+    max-width: 90%;
+    margin: 20px auto;
+    border: none;
+}
+
+/* Sticky Post Section  */
+
+.sticky-post {
+    background-color: #0B432B;
+    max-height: 180px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.sp-text {
+    width: 50%;
+    height: 200px;
+    text-align: start;
+    margin-top: 40px;
+    color: white;
+    padding: 0 30px;
+}
+
+.sp-text h4 {
+    font-size: 17px;
+}
+
+.sp-text p {
+    font-size: 12px;
+    padding-right: 100px;
+}
+
+.sp-image {
+    width: 50%;
+}
+
+.sp-image img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+/* Recent Posts styling */
+
+.recent-posts {
+    max-width: 100%;
+    max-height: 400px;
+    padding: 20px;
+    color: white;
+    display: flex;
+}
+
+.srp {
+    max-width: 210px;
+    height: 290px;
+    background-color: #0C7F38;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.srp img {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+}
+
+.srp h4 {
+    font-size: 13px;
+    padding: 10px;
+    margin: 0;
+}
+
+.srp p {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: -20px;
+}
+
+.srp a {
+    text-decoration: none;
+    color: white;
+    background-color: #155932;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Social Media Pages  */
+.social-pages {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 40px auto;
+    overflow: hidden;
+
+}
+
+.page1 {
+    width: 45%;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+
+}
+
+.content:last-child {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -50px;
+}
+
+.page-headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-headings h1 {
+    font-size: 25px;
+    color: white;
+}
+
+#tw-h {
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+#fb-h {
+    position: relative;
+    right: 170px;
+    top: 40px;
+}
+
+.tabs-main {
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-2.png);
+    width: 100%;
+    padding: 0 40px 40px 10px;
+    position: relative;
+}
+
+.tabs-inner {
+    width: 80%;
+    margin: 0 10px 0 90px;
+    background-color: red;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
+}
+
+.tab-content {
+    padding: 20px 0 20px 20px;
+    color: rgba(255, 255, 255, 0.696);
+    overflow-y: auto;
+    max-height: 440px;
+    min-height: 440px;
+
+}
+
+.tabs-inner .nav-pills {
+    padding: 10px 10px 0 10px;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-3.png);
+
+}
+
+.tabs-inner .nav-pills a {
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
+}
+
+
+/*Right Sidebars */
+
+.sidebar1 {
+    width: 280px;
+    /* height: 350px; */
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-1.png);
+    margin: 20px;
+    position: relative;
+}
+
+.sidebar1 h1 {
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-3.png);
+    font-size: 20px;
+    padding: 5px 0 5px 15px;
+    margin: 0;
+    color: white;
+}
+
+.sidebar1:nth-child(2) {
+    height: 250px;
+}
+
+.sidebar1:nth-child(3) {
+    height: 320px;
+}
+
+.sidebar1:last-child {
+    height: 200px;
+
+}
+
+
+/* Event Post type  */
+
+.events-container {
+    min-height: 270px;
+    overflow: hidden;
+}
+
+.event-bottom {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+
+
+.pag-btns .fa-chevron-left {
+    margin-left: -15px;
+    padding: 10px;
+    background-color: #115236;
+    cursor: pointer;
+}
+
+.pag-btns .fa-chevron-right {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #115236;
+    cursor: pointer;
+}
+
+.single-event {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.event-image img {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.event-content {
+    margin-left: 10px;
+}
+
+.event-content h4 {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.event-content p {
+    color: #f0f0f0;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.more-event p {
+    /* font-size: 18px; */
+    text-decoration: underline;
+}
+
+.categories {
+    margin-top: 20px;
+    color: white;
+}
+
+.single-cat {
+    margin-bottom: 7px;
+}
+
+.categories a {
+
+    color: white;
+    margin-left: 7px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* Weather Box  */
+
+.weather-box {
+    width: 260px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    margin: 15px auto;
+}
+
+
+.first-sec {
+    display: flex;
+    justify-content: space-between;
+    min-height: 140px;
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.weather-text p:first-child {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 25px;
+}
+
+.weather-text h2,
+.weather-text p:last-child {
+    margin: 0 20px 0 0;
+}
+
+.weather-text p:last-child {
+    font-size: 18px;
+    margin-left: 10px;
+    letter-spacing: 2.5px;
+}
+
+.weather-text h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.second-sec {
+    display: flex;
+}
+
+.weather-icon img {
+    width: 120px;
+    height: 120px;
+}
+
+.weather-temp p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.weather-temp h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.weather-temp {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* next 3 days weather  */
+
+.single-w {
+    display: flex;
+    margin-left: 10px;
+}
+
+.daily-forecast p {
+    margin: 0;
+}
+
+.date-time {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.date-time h3 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.date-time p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+
+
+/* footer stylign  */
+
+
+/* footer styling  */
+.footermain {
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/pettern-3.png);
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footermain .footer1 {
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    /* background-color: red; */
+
+}
+
+.footer1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer1 li {
+    list-style: none;
+    background: url(/wp-content/themes/figma-wordpress-theme/assets/images/icon-list.png) no-repeat left center;
+    padding-left: 20px;
+    background-size: 7px 7px;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.footer1 .widget-title {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+
+
+#footerlogo img {
+    width: 200px;
+    height: 53px;
+}
+
+#footerlogo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 0; */
+
+
+}
+
+#footerlogo .copyright {
+    /* background-color: #219b21;  */
+    font-size: 16px;
+    text-align: center;
+    /* margin-top: -30px; */
+
+}
+
+#footerlogo .copyright a {
+    font-size: 16px;
+}
+
+#nav_menu-4 li {
+    /* background-color: #800080; */
+    margin-left: -40px;
+}
